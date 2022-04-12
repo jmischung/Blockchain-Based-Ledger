@@ -1,24 +1,54 @@
-# Project Title
+# Blockchain-Based Transaction Ledger
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+This project builds a blockchain to store the details of transactions; sender, receiver, amount. Streamlit is used for the frontend, allowing new transactions to be added to the blockchain by non-technical users.
+
+<br>
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+This project leverages python 3.7 with the following packages:
+
+* [Pandas](https://pandas.pydata.org/) - For analyzing and transforming data
+* [Streamlit](https://streamlit.io/) - For rapidly building frontends for data-driven apps
+
+<br>
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+Before running the application first install the following dependencies.
+
+```python
+ pip install pandas
+ pip install streamlit
+```
+
+<br>
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+To use the app clone the repository and run the following command in the directory where `pychain.py` is located:
+
+```python
+ streamlit run pychain.py
+```
+
+To store a transaction in the blockchain fill in the *sender*, *receiver*, and *amount* fields, then click *Add Block*.
+
+After storing the transaction the updated blockchain will be displayed under The PyChain Ledger.
+
+![Store transaction in the blockchain](images/pyChain_addTransactions.png)
+
+Clicking *Validate Chain* confirms the validity of the blockchain and displays the results below the button.
+
+![Validating the blockchain](images/pyChain_verifyChain.png)
+
+<br>
 
 ## Contributors
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.  
+Josh Mischung: [josh@knoasis.io](josh@knoasis.io), [LinkedIn](https://www.linkedin.com/in/joshmischung/)
 
-- Josh Mischung: [josh@knoasis.io](josh@knoasis.io), [LinkedIn](https://www.linkedin.com/in/joshmischung/)
+<br>
 
 ## License
 
